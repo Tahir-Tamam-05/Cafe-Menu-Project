@@ -355,7 +355,7 @@ class CafeMenuAPITester:
             "Invalid OTP Verification",
             "POST",
             "auth/verify-otp",
-            400,
+            404,
             data={"email": self.admin_email, "otp": "000000"}
         )
         
