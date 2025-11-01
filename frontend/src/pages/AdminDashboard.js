@@ -360,8 +360,8 @@ const AdminDashboard = () => {
       </main>
 
       {/* Add/Edit Dialog */}
-      <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
-        <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
+      <Dialog open={dialogOpen} onOpenChange={setDialogOpen} modal={true}>
+        <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto" onInteractOutside={(e) => e.preventDefault()}>
           <DialogHeader>
             <DialogTitle className="text-2xl text-[#6B4423]">
               {editingItem ? "Edit Menu Item" : "Add New Menu Item"}
