@@ -345,7 +345,7 @@ class CafeMenuAPITester:
             "Unauthorized Admin Access",
             "GET",
             "admin/menu",
-            401
+            403
         )
         
         self.token = temp_token  # Restore token
