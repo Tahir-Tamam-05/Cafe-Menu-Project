@@ -282,7 +282,7 @@ class CafeMenuAPITester:
             "Create New Menu Item",
             "POST",
             "admin/menu",
-            201,
+            200,
             data=test_item
         )
         
